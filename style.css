@@ -1,0 +1,329 @@
+/*
+Theme Name: Austin Gardner Portfolio
+Author: Dan Varnau
+Author URI: http://danvarnau.com
+Description: A custom portfolio built for Austin Gardner's portfolio
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/******************GENERAL*******************/
+@font-face {
+  font-family: 'League Spartan';
+  src: url("fonts/leaguespartan-bold.eot");
+  src: url("fonts/leaguespartan-bold.eot?#iefix") format("embedded-opentype"), url("fonts/leaguespartan-bold.woff2") format("woff2"), url("fonts/leaguespartan-bold.woff") format("woff"), url("fonts/leaguespartan-bold.ttf") format("truetype"), url("fonts/leaguespartan-bold.svg#league_spartanbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+html {
+  overflow-y: scroll;
+  color: #2a2a2a; }
+
+#wrapper {
+  width: 44%;
+  text-align: center;
+  margin: 0 auto; }
+
+a, a:visited {
+  color: #2a2a2a;
+  text-decoration: none; }
+
+a:hover {
+  color: #000; }
+
+.spacer {
+  height: 290px;
+  margin-bottom: 50px; }
+
+#active {
+  font-weight: bold; }
+
+/******************HEADER********************/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.center {
+  margin: 120px 10% 0 10%;
+  font-size: .8em;
+  text-align: center;
+}
+
+.headerScrolled {
+  margin-top: 40px; }
+
+h1 {
+  margin: 0;
+  padding: 0 0 25px 0;
+  font-family: 'League Spartan', 'Roboto', Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 120%; }
+
+.h1Scrolled {
+  padding: 0 0 20px 0;
+  margin: 0;
+  font-size: 18px; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  display: inline;
+  padding: 0 10px; }
+
+.nav {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 12px; }
+
+.navScrolled {
+  padding-bottom: 20px; }
+
+#active {
+  font-weight: bold;
+  color: #000; }
+
+.headerLine {
+  border-bottom: 4px solid #000;
+  border-top: none;
+  width: 100px;
+  margin: 0 auto;
+  clear: both; }
+
+.hrScrolled {
+  width: 100%; }
+
+/******************CONTENT******************/
+.post {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 42%;
+  padding-top: 0;
+  height: 0;
+  margin: 0 auto 40px auto;
+  z-index: 2;
+  overflow: hidden; }
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(42, 42, 42, 0.7);
+  z-index: 20; }
+
+.overlayPlaying {
+  display: none;
+  height: auto; }
+
+.title {
+  color: #fff;
+  margin: 15% 0 0 0;
+  font-family: 'League Spartan', 'Roboto', Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: .1em;
+  padding-bottom: 1.1vw; }
+
+.titlePlaying {
+  margin: 10px 0 0 10px;
+  font-size: 14px;
+  text-align: left;
+  padding-bottom: 0; }
+
+.role {
+  margin: 0;
+  color: #fff;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: .1em;
+  padding-bottom: 2.1vw; }
+
+.rolePlaying {
+  margin: 0 0 0 10px;
+  text-align: left;
+  padding-bottom: 10px; }
+
+.playButton {
+  margin: 0 auto;
+  cursor: pointer;
+  width: 6.32%; }
+
+.videoDescription {
+  text-align: left;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto 20px auto;
+  line-height: 236%;
+  font-family: Helvetica, sans-serif;
+  font-size: 11px; }
+
+.thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.vimeoLine {
+  border-bottom: 2px solid #000;
+  border-top: none;
+  width: 75px;
+  float: left;
+  padding: 0;
+  margin: 0 0 50px 0; }
+
+.videoWrapper:hover .overlay {
+  display: block; }
+
+/******************CONTACT*******************/
+#contactWrapper {
+  width: 90%;
+  max-width: 1103px;
+  margin: 0 auto; }
+
+#contactPic {
+  float: left;
+  width: 21%;
+  max-width: 400px;
+  padding-right: 3%; }
+
+#contactText {
+  margin: 0 auto;
+  text-align: left;
+  width: 75%;
+  max-width: 1431px;
+  font-size: 12px;
+  line-height: 200%;
+  color: #2a2a2a;
+  float: right; }
+
+#bio {
+  margin: 0;
+  line-height: 200%;
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
+  padding-bottom: 14px; }
+
+#email, #phone {
+  color: #2a2a2a;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 14px;
+  padding-bottom: 14px;
+  line-height: 100%; }
+
+#contactLine {
+  width: 75px;
+  text-align: left;
+  display: block;
+  margin: 8px 0 11px 0;
+  border-bottom: 1px solid #000;
+  border-top: none; }
+
+#logos {
+  margin-left: 0; }
+
+#instagramLogo {
+  width: 15px; }
+
+#vimeoLogo {
+  width: 15px;
+  padding-right: 15px; }
+
+/******************FOOTER*******************/
+footer {
+  text-align: center;
+  margin: 100px 0 10px 0;
+  width: 100%;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 11px; }
+
+/****************RESPONSIVE*****************/
+@media (max-width: 1443px) {
+  #wrapper {
+    width: 100%;
+    max-width: 633px; } }
+
+@media (max-width: 800px) {
+  .overlay {
+    display: block;
+    height: auto;
+    background-color: transparent; }
+
+  .title {
+    margin: 10px 0 0 10px;
+    font-size: 12px;
+    text-align: left;
+    padding-bottom: 0;
+    text-shadow: 1px 1px #000; }
+
+  .role {
+    margin: 0 0 0 10px;
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 10px;
+    text-shadow: 1px 1px #000; }
+
+  .playButton {
+    display: none; }
+
+  .thumbnail {
+    display: none; } }
+
+@media (max-width: 650px) {
+  #contactWrapper {
+    width: 100%; }
+
+  #contactPic {
+    float: none;
+    margin: 0 auto 10px auto;
+    display: block;
+    padding: 0;
+    width: 35%; }
+
+  #contactText {
+    float: none;
+    width: 95%;
+    margin: 0 auto; }
+
+  #bio {
+    width: 100%; }
+
+  .videoDescription {
+    width: 95%; }
+
+  .vimeoLine {
+    margin-left: 2.5%; }
+
+  .videoWrapper {
+    margin-bottom: 20px; }
+
+  header {
+    position: static; }
+
+  .spacer {
+    height: 0px; } }
+
+/*# sourceMappingURL=style.css.map */
